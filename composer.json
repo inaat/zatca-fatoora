@@ -1,5 +1,5 @@
 {
-    "name": "saudiev/zatca-fatoora",
+    "name": "saudiza/zatca-fatoora",
     "description": "🇸🇦 Fatoora - ZATCA Phase 2 E-Invoice Integration for Laravel | Complete Saudi Arabia Tax Authority Compliance",
     "type": "library",
     "keywords": [
@@ -42,22 +42,22 @@
     },
     "autoload": {
         "psr-4": {
-            "SaudiEv\\Fatoora\\": "src/"
+            "Saudiza\\Fatoora\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SaudiEv\\Fatoora\\Tests\\": "tests/"
+            "Saudiza\\Fatoora\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "SaudiEv\\Fatoora\\FatooraServiceProvider"
+                "Saudiza\\Fatoora\\FatooraServiceProvider"
             ],
             "aliases": {
-                "Fatoora": "SaudiEv\\Fatoora\\Facades\\Fatoora",
-                "Zatca": "SaudiEv\\Fatoora\\Facades\\Fatoora"
+                "Fatoora": "Saudiza\\Fatoora\\Facades\\Fatoora",
+                "Zatca": "Saudiza\\Fatoora\\Facades\\Fatoora"
             }
         }
     },

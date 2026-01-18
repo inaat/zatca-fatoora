@@ -1,6 +1,6 @@
 <?php
 
-namespace SaudiEv\Fatoora;
+namespace Saudiza\Fatoora;
 
 use Exception;
 

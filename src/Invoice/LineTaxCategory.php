@@ -1,5 +1,5 @@
 <?php
-namespace SaudiEv\Fatoora\Invoice;
+namespace Saudiza\Fatoora\Invoice;
 
 /**
  * A class defines zatca phase two line tax category

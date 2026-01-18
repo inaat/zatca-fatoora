@@ -1,10 +1,10 @@
 <?php
 
-namespace SaudiEv\Fatoora;
+namespace Saudiza\Fatoora;
 
-use SaudiEv\Fatoora\Invoice\InvoiceGenerator;
-use SaudiEv\Fatoora\OnBoarding;
-use SaudiEv\Fatoora\Models\ZatcaDocument;
+use Saudiza\Fatoora\Invoice\InvoiceGenerator;
+use Saudiza\Fatoora\OnBoarding;
+use Saudiza\Fatoora\Models\ZatcaDocument;
 
 /**
  * Main ZATCA class - Facade for package functionality

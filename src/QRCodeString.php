@@ -1,5 +1,5 @@
 <?php
-namespace SaudiEv\Fatoora;
+namespace Saudiza\Fatoora;
 
 /**
  * A class defines zatca qr base64 string

@@ -1,5 +1,5 @@
 <?php
-namespace SaudiEv\Fatoora;
+namespace Saudiza\Fatoora;
 use phpseclib3\File\X509;
 
 /**

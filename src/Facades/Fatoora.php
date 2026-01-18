@@ -1,18 +1,18 @@
 <?php
 
-namespace SaudiEv\Fatoora\Facades;
+namespace Saudiza\Fatoora\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \SaudiEv\Fatoora\Invoice\InvoiceGenerator invoice()
- * @method static \SaudiEv\Fatoora\OnBoarding onboarding()
- * @method static \SaudiEv\Fatoora\Models\ZatcaDocument|null getDocumentByUuid(string $uuid)
- * @method static \SaudiEv\Fatoora\Models\ZatcaDocument|null getDocumentByInvoiceId(int $invoiceId)
+ * @method static \Saudiza\Fatoora\Invoice\InvoiceGenerator invoice()
+ * @method static \Saudiza\Fatoora\OnBoarding onboarding()
+ * @method static \Saudiza\Fatoora\Models\ZatcaDocument|null getDocumentByUuid(string $uuid)
+ * @method static \Saudiza\Fatoora\Models\ZatcaDocument|null getDocumentByInvoiceId(int $invoiceId)
  * @method static \Illuminate\Database\Eloquent\Collection getPendingDocuments()
- * @method static \SaudiEv\Fatoora\ZatcaConfig config()
+ * @method static \Saudiza\Fatoora\ZatcaConfig config()
  *
- * @see \SaudiEv\Fatoora\Fatoora
+ * @see \Saudiza\Fatoora\Fatoora
  */
 class Fatoora extends Facade
 {

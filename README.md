@@ -1,8 +1,8 @@
 # 🇸🇦 Fatoora - Laravel ZATCA E-Invoice Integration
 
-[![Latest Version](https://img.shields.io/packagist/v/saudiev/zatca-fatoora.svg?style=flat-square)](https://packagist.org/packages/saudiev/zatca-fatoora)
-[![License](https://img.shields.io/packagist/l/saudiev/zatca-fatoora.svg?style=flat-square)](LICENSE)
-[![Total Downloads](https://img.shields.io/packagist/dt/saudiev/zatca-fatoora.svg?style=flat-square)](https://packagist.org/packages/saudiev/zatca-fatoora)
+[![Latest Version](https://img.shields.io/packagist/v/saudiza/zatca-fatoora.svg?style=flat-square)](https://packagist.org/packages/saudiza/zatca-fatoora)
+[![License](https://img.shields.io/packagist/l/saudiza/zatca-fatoora.svg?style=flat-square)](LICENSE)
+[![Total Downloads](https://img.shields.io/packagist/dt/saudiza/zatca-fatoora.svg?style=flat-square)](https://packagist.org/packages/saudiza/zatca-fatoora)
 
 > **Complete ZATCA Phase 2 e-invoicing integration for Laravel** - Saudi Arabia Tax Authority compliance made simple.
 
@@ -31,7 +31,7 @@
 ## Installation
 
 ```bash
-composer require saudiev/zatca-fatoora
+composer require saudiza/zatca-fatoora
 ```
 
 ### Quick Setup
@@ -54,7 +54,7 @@ php artisan zatca:onboarding --otp=YOUR_OTP
 ### Generate Invoice
 
 ```php
-use SaudiEv\Fatoora\Facades\Fatoora;
+use Saudiza\Fatoora\Facades\Fatoora;
 
 // Create invoice
 $invoice = Fatoora::invoice();
@@ -68,7 +68,7 @@ $invoice->setInvoiceNumber('INV-001')
     ->setInvoiceTaxCurrencyCode('SAR');
 
 // Configure supplier
-$supplier = new \SaudiEv\Fatoora\Invoice\Supplier();
+$supplier = new \Saudiza\Fatoora\Invoice\Supplier();
 $supplier->setVatName('Your Company')
     ->setVatNumber('300000000000003')
     ->setCityName('Riyadh')

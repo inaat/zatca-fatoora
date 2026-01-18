@@ -1,10 +1,10 @@
 <?php
 
-namespace SaudiEv\Fatoora;
+namespace Saudiza\Fatoora;
 
 use Illuminate\Support\ServiceProvider;
-use SaudiEv\Fatoora\Console\ZatcaInstallCommand;
-use SaudiEv\Fatoora\Console\ZatcaOnboardingCommand;
+use Saudiza\Fatoora\Console\ZatcaInstallCommand;
+use Saudiza\Fatoora\Console\ZatcaOnboardingCommand;
 
 class FatooraServiceProvider extends ServiceProvider
 {

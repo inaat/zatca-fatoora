@@ -1,10 +1,10 @@
 <?php
-namespace SaudiEv\Fatoora\Invoice;
+namespace Saudiza\Fatoora\Invoice;
 
 use Exception;
-use SaudiEv\Fatoora\Cert509XParser;
-use SaudiEv\Fatoora\QRCodeString;
-use SaudiEv\Fatoora\ZatcaConfig;
+use Saudiza\Fatoora\Cert509XParser;
+use Saudiza\Fatoora\QRCodeString;
+use Saudiza\Fatoora\ZatcaConfig;
 use GuzzleHttp\Exception\ClientException;
 
 /**

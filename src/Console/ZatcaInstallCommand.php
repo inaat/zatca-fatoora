@@ -1,6 +1,6 @@
 <?php
 
-namespace SaudiEv\Fatoora\Console;
+namespace Saudiza\Fatoora\Console;
 
 use Illuminate\Console\Command;
 

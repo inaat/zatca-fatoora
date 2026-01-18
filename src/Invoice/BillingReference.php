@@ -1,5 +1,5 @@
 <?php
-namespace SaudiEv\Fatoora\Invoice;
+namespace Saudiza\Fatoora\Invoice;
 
 /**
  * A class defines zatca phase two billing reference when credit or debit notes

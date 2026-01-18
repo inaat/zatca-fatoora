@@ -1,12 +1,12 @@
 <?php
-namespace SaudiEv\Fatoora;
+namespace Saudiza\Fatoora;
 
 use Exception;
 use OpenSSLAsymmetricKey;
 use OpenSSLCertificateSigningRequest;
-use SaudiEv\Fatoora\ZatcaConfig;
+use Saudiza\Fatoora\ZatcaConfig;
 use GuzzleHttp\Exception\ClientException;
-use SaudiEv\Fatoora\Invoice\ComplianceSteps;
+use Saudiza\Fatoora\Invoice\ComplianceSteps;
 
 /**
  * A class defines first step for zatca phase two integration (get zatca authorization)

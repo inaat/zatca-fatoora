@@ -1,5 +1,5 @@
 <?php
-namespace SaudiEv\Fatoora\Invoice;
+namespace Saudiza\Fatoora\Invoice;
 use Exception;
 
 /**

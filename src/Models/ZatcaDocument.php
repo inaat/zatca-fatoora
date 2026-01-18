@@ -1,6 +1,6 @@
 <?php
 
-namespace SaudiEv\Fatoora\Models;
+namespace Saudiza\Fatoora\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

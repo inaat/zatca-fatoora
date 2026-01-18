@@ -1,9 +1,9 @@
 <?php
 
-namespace SaudiEv\Fatoora\Console;
+namespace Saudiza\Fatoora\Console;
 
 use Illuminate\Console\Command;
-use SaudiEv\Fatoora\Facades\Zatca;
+use Saudiza\Fatoora\Facades\Zatca;
 
 class ZatcaOnboardingCommand extends Command
 {
