@@ -21,9 +21,9 @@ class ZatcaConfig
 
         $urls = config('zatca.api', [
             'production' => 'https://gw-fatoora.zatca.gov.sa/e-invoicing/core',
-            'sandbox' => 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/core',
-            'simulation' => 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/simulation',
-            'developer-portal' => 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal',
+            'sandbox' => 'https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation',
+            'simulation' => 'https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation',
+            'developer-portal' => 'https://gw-fatoora.zatca.gov.sa/e-invoicing/developer-portal',
         ]);
 
         return $urls[$env] ?? $urls['sandbox'];
