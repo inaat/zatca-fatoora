@@ -20,18 +20,10 @@ class FatooraServiceProvider extends ServiceProvider
             __DIR__.'/../config/zatca.php' => config_path('zatca.php'),
         ], 'zatca-config');
 
-        // Publish migrations
-        $this->publishes([
-            __DIR__.'/../database/migrations' => database_path('migrations'),
-        ], 'zatca-migrations');
-
         // Publish language files
         $this->publishes([
             __DIR__.'/../resources/lang' => resource_path('lang/vendor/zatca'),
         ], 'zatca-lang');
-
-        // Load migrations
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         // Load translations
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'zatca');

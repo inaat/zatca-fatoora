@@ -4,12 +4,11 @@ namespace Saudiza\Fatoora;
 
 use Saudiza\Fatoora\Invoice\InvoiceGenerator;
 use Saudiza\Fatoora\OnBoarding;
-use Saudiza\Fatoora\Models\ZatcaDocument;
 
 /**
- * Main ZATCA class - Facade for package functionality
+ * Main Fatoora class - Facade for package functionality
  */
-class Zatca
+class Fatoora
 {
     /**
      * Create a new invoice generator instance
@@ -94,40 +93,6 @@ class Zatca
         }
 
         return $onboarding;
-    }
-
-    /**
-     * Get ZATCA document by UUID
-     *
-     * @param string $uuid
-     * @return ZatcaDocument|null
-     */
-    public function getDocumentByUuid(string $uuid): ?ZatcaDocument
-    {
-        return ZatcaDocument::where('uuid', $uuid)->first();
-    }
-
-    /**
-     * Get ZATCA document by invoice ID
-     *
-     * @param int $invoiceId
-     * @return ZatcaDocument|null
-     */
-    public function getDocumentByInvoiceId(int $invoiceId): ?ZatcaDocument
-    {
-        return ZatcaDocument::where('invoice_id', $invoiceId)->first();
-    }
-
-    /**
-     * Get all pending ZATCA documents
-     *
-     * @return \Illuminate\Database\Eloquent\Collection
-     */
-    public function getPendingDocuments()
-    {
-        return ZatcaDocument::where('sent_to_zatca', false)
-            ->orWhereNull('sent_to_zatca')
-            ->get();
     }
 
     /**
