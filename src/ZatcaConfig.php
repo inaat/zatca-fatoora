@@ -12,21 +12,12 @@ class ZatcaConfig
     /**
      * Get base URL based on ZATCA environment
      *
-     * @param string|null $env
+     * @param string $env
      * @return string
      */
-    public static function baseUrl(?string $env = null): string
+    public static function baseUrl(string $env): string
     {
-        $env = $env ?? config('zatca.environment', 'sandbox');
-
-        $urls = config('zatca.api', [
-            'production' => 'https://gw-fatoora.zatca.gov.sa/e-invoicing/core',
-            'sandbox' => 'https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation',
-            'simulation' => 'https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation',
-            'developer-portal' => 'https://gw-fatoora.zatca.gov.sa/e-invoicing/developer-portal',
-        ]);
-
-        return $urls[$env] ?? $urls['sandbox'];
+        return "https://gw-fatoora.zatca.gov.sa/e-invoicing/$env";
     }
 
     /**
@@ -37,31 +28,27 @@ class ZatcaConfig
     public static function getEnvironments(): array
     {
         return [
-            'production',
-            'sandbox',
-            'simulation',
             'developer-portal',
+            'simulation',
+            'core'
         ];
     }
 
     /**
-     * Get certificate template name for environment
+     * Get zatca certificate templates
      *
-     * @param string|null $env
+     * @param string $env
      * @return string
      */
-    public static function getCertificateTemplate(?string $env = null): string
+    public static function getCertificateTemplates(string $env): string
     {
-        $env = $env ?? config('zatca.environment', 'sandbox');
-
-        $templates = config('zatca.certificate_templates', [
-            'production' => 'ZATCA-Code-Signing',
-            'sandbox' => 'PREZATCA-Code-Signing',
-            'simulation' => 'PREZATCA-Code-Signing',
+        $templates = [
             'developer-portal' => 'TSTZATCA-Code-Signing',
-        ]);
+            'simulation' => 'PREZATCA-Code-Signing',
+            'core' => 'ZATCA-Code-Signing',
+        ];
 
-        return $templates[$env] ?? $templates['sandbox'];
+        return $templates[$env];
     }
 
     /**

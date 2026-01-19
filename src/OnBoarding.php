@@ -51,7 +51,7 @@ class OnBoarding {
             throw new Exception('Zatca environment is required');
         }
 
-        $this->certificateTemplateName = ZatcaConfig::getCertificateTemplate($env);
+        $this->certificateTemplateName = ZatcaConfig::getCertificateTemplates($env);
         $this->env = $env;
 
         return $this;
