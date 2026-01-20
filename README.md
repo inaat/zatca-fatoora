@@ -16,10 +16,9 @@
 - ✅ UBL 2.1 XML compliant
 
 💼 **Laravel First**
-- Laravel 10.x & 11.x support
+- Laravel 9.x, 10.x & 11.x support
 - Beautiful Facade API (`Fatoora::invoice()`)
 - Artisan commands for setup
-- Database integration with Eloquent
 - Multiple environments (sandbox, production)
 
 🔒 **Security**
@@ -151,8 +150,8 @@ php artisan tinker
 
 ## Requirements
 
-- PHP 8.1+
-- Laravel 10.x or 11.x
+- PHP 8.0+
+- Laravel 9.x, 10.x, or 11.x
 - OpenSSL extension
 - XMLReader extension
 
