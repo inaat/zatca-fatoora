@@ -37,7 +37,7 @@ composer require saudiza/zatca-fatoora
 
 ```bash
 # 1. Install package
-php artisan fatoora:install
+php artisan zatca:install
 
 # 2. Configure .env
 ZATCA_ENVIRONMENT=sandbox
@@ -114,7 +114,7 @@ return [
 
 ```bash
 # Install package
-php artisan fatoora:install
+php artisan zatca:install
 
 # Run onboarding
 php artisan zatca:onboarding --otp=YOUR_OTP

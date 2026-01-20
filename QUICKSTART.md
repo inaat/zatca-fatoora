@@ -21,7 +21,7 @@ composer require saudiza/zatca-fatoora
 2. **Run package installation:**
 
 ```bash
-php artisan fatoora:install
+php artisan zatca:install
 ```
 
 3. **Configure `.env`:**
@@ -127,7 +127,7 @@ Changes to the package will be reflected immediately (symlinked).
 ## 🎯 Next Steps
 
 1. ✅ Install the package via Composer
-2. ✅ Run `php artisan fatoora:install`
+2. ✅ Run `php artisan zatca:install`
 3. ✅ Configure your `.env` file
 4. ✅ Run onboarding with ZATCA OTP
 5. ✅ Start generating invoices!
